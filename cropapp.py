@@ -31,7 +31,7 @@ rainfall = st.number_input("Rainfall (mm)", min_value=0.0, max_value=500.0, valu
 
 if st.button("Recommend Crop"):
     # 3. Input ko numpy array me lo
-    features = np.array([[N, P, K, temperature, humidity, ph, rainfall]])
+    features = np.array([[moisture, temperature, humidity, ph, rainfall]])
 
     # 4. Scale
     features_scaled = scaler.transform(features)

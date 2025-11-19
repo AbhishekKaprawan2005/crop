@@ -52,7 +52,7 @@ model.compile(optimizer='adam',
 
 model.fit(X_train_scaled, y_train, epochs=30, batch_size=32, validation_split=0.1)
 
-model.save("crop_rnn_model.h5")
+model.save("crop_rnn_model.keras")
 joblib.dump(scaler, "scaler.pkl")
 joblib.dump(le, "label_encoder.pkl")
 
